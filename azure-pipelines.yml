@@ -28,6 +28,7 @@ steps:
     projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration)' # Update this to match your need
 - task: DotNetCoreCLI@2
+  displayName: UnitTest
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
